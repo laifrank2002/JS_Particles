@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="javascript/engine.js"></script>
+	<script src="javascript/canvas_handler.js"></script>
+	<script src="javascript/image_loader.js"></script>
+	<script src="javascript/mouse_handler.js"></script>
+	
+	<script src="javascript/particle_handler.js"></script>
+	<script src="javascript/particle.js"></script>
+	
+	<script src="JS_pages/JS_page.js"></script>
+	<script src="JS_pages/JS_button.js"></script>
+	<script src="JS_pages/JS_label.js"></script>
+	<script src="JS_pages/JS_image.js"></script>
+	<script src="JS_pages/JS_panel.js"></script>
+	<script src="JS_pages/page_manager.js"></script>
+	
+	<script>
+		// these need to be loaded good and beforehand.
+		var image_library = {
+			
+		};
+		
+		var audio_library = {
+			
+		};
+		
+		// when the window is loaded, then the engine can be safely initialized
+		window.onload = function()
+		{
+			Engine.initialize();
+		}
+		
+	</script>
+</head>
+</body>
+	<div id="canvas_container">
+		<canvas height="500px" width="800px" id="main_canvas">Your browser does not support the canvas element.</canvas>
+	</div>
+	<h1>JS Particles</h1>
+	<h2>By Frank Lai</h2>
+</body>
+</html>
